@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<string.h>//头文件
+int main()//主函数
+{
+char arr[] = “hello”;//设立一个字符串hello，设编号为arr
+char arr1[] = “yejiacheng”;//设立一个字符串yejiacheng，设编号为arr1
+char arr2[] = { 'a'，'b'，'c'，'\0'};//设立三个字符abc，设编号为arr2 注：\0为判定字符数组结束标识，不加后果可看下方注释会有解释
+
+  printf（“%s\n”， arr）;//打印字符串格式arr
+  printf（“%s\n”， arr1）;//打印字符串格式arr1
+	printf（“%s\n”， arr2）;//打印字符串格式arr2 注：代码arr2若无\0，打印出会出现乱码
+  //11,12,13不可与15，16，17，18代码同时存在，需将任意一方注释掉方可运行
+  
+  int len = strlen（“yejiacheng”）;//检查字符串长度以数字形式显示
+  printf("%d\n", len);//打印len的数字
+  printf（“%d\n”， strlen（arr1））;//打印arr1字符串长度以数字形式显示 注：该为15，16代码的简化形式
+  printf（“%d\n”， strlen（arr2））;//打印arr2字符串长度以数字形式显示 注：arr2中若无\0，打印值为随机值！！
+
+	return 0;
+}
