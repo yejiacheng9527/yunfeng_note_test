@@ -1,0 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>//头文件
+int main()//主函数
+{
+	int input = 0;//设立一个代号为input
+	printf（“想要好好学习吗？\n”）;//输出（想要好好学习吗？）语句，\n为另起一行的转义字符
+	printf("想要走上人生巅峰吗？  1/0");//输出(想要走上人生巅峰吗？  1/0)语句
+	scanf("%d", &input);//输出值，且你的输出值就为input的值
+	if
+  //判断语句
+		(input == 1)//若input值为1
+	{
+		printf("走上大厦，走上人生巅峰\n");//if若判断成立，则输出（走上大厦，走上人生巅峰）语句
+	}
+	else
+  //若if语句不成立，则进入else语句
+	{
+		printf("烤上地瓜，走上人生癫疯\n");//若if语句不成立，则输出else括号中（烤上地瓜，走上人生癫疯）语句
+	}
+	return 0;
+  //程序正常退出
+}
