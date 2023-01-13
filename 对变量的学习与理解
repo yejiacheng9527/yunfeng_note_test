@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>//头文件
+int main()//主函数
+{
+	int x, y;//设立变量x，y
+		x = 16;//给变量赋上初始值16
+	y = x + 20;//给变量赋上初始值x + 20
+	printf("%d\n", x);//输出x
+	printf("%d\n", y);//输出y
+	return 0;//程序正常退出
+ }
+//或以第二种形式（使用时请将前一个主函数注释）
+int main()
+{
+	int x = 16;//设立变量x，并赋上初始值16
+	int y = x + 20;//设立变量y，并赋上初始值x + 20
+	printf("%d\n", x);//输出x
+	printf("%d\n", y);//输出y
+	return 0;
+}
