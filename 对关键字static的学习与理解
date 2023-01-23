@@ -1,0 +1,38 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+void feng()
+{
+	 int a = 1;//static为保持变量内容持久，此为将变量a保存不销毁以进行后次使用
+	a++;//变量a加一
+	printf("%d", a);//输出a，并以十进制形式输出
+}
+void main()//主函数
+{
+	int i = 0;//设置变量i，设初始值为0
+		while (i < 10)//循环语句，表达循环十次
+		{
+			feng();//设立一个函数feng，可看上方void feng函数
+				i++;//i变量加一
+		}
+	return 0;//程序正常退出
+}
+//数据应为2 2 2 2 2 2 2 2 2 2
+
+//以下函数仅多类型static，可注释其中任意一方函数运行以便理解static
+void feng()
+{
+	static int a = 1;//static为保持变量内容持久，此为将变量a保存不销毁以进行后次使用
+	a++;
+	printf("%d", a);
+}
+void main()
+{
+	int i = 0;
+	while (i < 10)
+	{
+		feng();
+		i++;
+	}
+	return 0;
+}
+//运行结果应为2 3 4 5 6 7 8 9 10 11
